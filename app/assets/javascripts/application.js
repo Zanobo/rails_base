@@ -15,8 +15,9 @@
 // require turbolinks
 //= require angular
 // require angular-animate
-// require angular-resource
-// require angular-route
+//= require angular-resource
+//= require angular-route
+//= require angular-flash.js
 // require angular-ui-bootstrap
 //= require angular-ui-bootstrap-tpls
 //= require angular-rails-templates
@@ -29,5 +30,6 @@
 angular.element(document).ready(function() {
     angular.bootstrap(document.getElementById("ng-simpleapp"),['simpleApp']);
     angular.bootstrap(document.getElementById("ui.bootstrap.demo"),['ui.bootstrap.demo']);
+    angular.bootstrap(document.getElementById("artest"),['artest']);
 });
 

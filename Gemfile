@@ -31,6 +31,7 @@ group :development, :test do
   gem 'factory_girl_rails'    # for model linting and in-memory building
   gem 'database_cleaner'      # for cleaning up linting records
   gem 'capybara'              # web driver for tests
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

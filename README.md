@@ -32,4 +32,3 @@ https://github.com/pitr/angular-rails-templates
   bundle exec rake db:setup
   bundle exec rails s
 ```
-
