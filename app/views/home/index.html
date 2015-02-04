@@ -1,1 +1,42 @@
 <h1>Welcome Home!</h1>
+<h2>We're trying to test:</h2>
+<ul>
+  <li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+    Bootstrap sass working (appears to be, icons?)</li>
+  <li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+    Angular working</li>
+  <li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+    Angular bootstrap ui working</li>
+  <li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+    Angular supporting libraries can be loaded/li>
+  <li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+    Angular template and support file load paths asset pipelined</li>
+  <li>Angular testable)</li>
+
+</ul>
+
+<h2>Bootstrap CSS Test</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="well">
+        Well...
+        <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Angular basic test</h2>
+<div id="ng-simpleapp">
+  <div ng-controller="simpleCtrl">{{name}}</div>
+</div>
+
+<h2>Bootstrap Angular JS Test</h2>
+<div id="ui.bootstrap.demo">
+  <div ng-controller="AlertDemoCtrl">
+    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+    <button class='btn btn-default' ng-click="addAlert()">Add Alert</button>
+  </div>
+</div>

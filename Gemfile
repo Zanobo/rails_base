@@ -46,14 +46,19 @@ group :development, :test, :staging do
 
   # Stylesheet Assets
   gem 'sass-rails', '~> 5.0'          # Sass compiler
+  gem 'bootstrap-sass', '~> 3.3.3'
+  gem 'font-awesome-rails'            # FA icons
 
   # Javascript Assets
   gem 'therubyracer', platform: :ruby # js interpreter for *nix
   gem 'coffee-script-source', '1.8.0' # normally 1.9 loaded by coffee-rails, but fixes regression error https://github.com/josh/ruby-coffee-script/issues/31
   gem 'coffee-rails', '~> 4.1.0'      # CoffeeScript compiler
   gem 'uglifier', '>= 1.3.0'          # minification
-  gem 'jquery-rails'
-  gem 'turbolinks'
+  #gem 'jquery-rails'
+  #gem 'turbolinks'
+  gem 'angularjs-rails'
+  gem 'angular-ui-bootstrap-rails'
+  gem 'angular-rails-templates'
 
 end
 

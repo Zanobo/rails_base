@@ -10,7 +10,24 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
+// require jquery
+// require jquery_ujs
+// require turbolinks
+//= require angular
+// require angular-animate
+// require angular-resource
+// require angular-route
+// require angular-ui-bootstrap
+//= require angular-ui-bootstrap-tpls
+//= require angular-rails-templates
 //= require_tree .
+
+// All templates loaded from ./templates are included in the "templates" module
+// angular.module('myApplication', ['templates']);
+
+
+angular.element(document).ready(function() {
+    angular.bootstrap(document.getElementById("ng-simpleapp"),['simpleApp']);
+    angular.bootstrap(document.getElementById("ui.bootstrap.demo"),['ui.bootstrap.demo']);
+});
+
