@@ -22,5 +22,16 @@ module ZanoboRailsBase
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Use RSpec for generated tests
+    # http://stackoverflow.com/questions/6271981/how-do-i-generate-a-controller-spec-using-rspec
+    config.generators do |g|
+      g.test_framework :rspec, fixture: true
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+
+      g.view_specs false
+      g.helper_specs false
+    end
+
   end
 end

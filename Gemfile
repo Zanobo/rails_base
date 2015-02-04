@@ -26,6 +26,11 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  gem 'rspec-rails', '~> 3.0' # Use RSpec for r-some spec testing
+  gem 'factory_girl_rails'    # for model linting and in-memory building
+  gem 'database_cleaner'      # for cleaning up linting records
+  gem 'capybara'              # web driver for tests
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -51,3 +56,4 @@ group :development, :test, :staging do
   gem 'turbolinks'
 
 end
+
